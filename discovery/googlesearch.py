@@ -9,7 +9,7 @@ import requests
 class search_google:
 
     def __init__(self, word, limit, start):
-        self.word = word
+        self.word = word.lower()
         self.results = ""
         self.totalresults = ""
         self.server = "www.google.com"
